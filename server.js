@@ -26,7 +26,7 @@ app.get('/scan', async (req, res) => {
   console.log("Received request to /scan endpoint...");
 
   // CORRECTED LOGIC: This now correctly checks for the placeholder text.
-  if (YOUR_API_KEY === "PASTE_YOUR_GOOGLE_AI_API_KEY_HERE") {
+  if (YOUR_API_KEY === "AIzaSyDV5kgTxu0bU73XC7WR_mFk7tWrMDfYTccRE") {
     return res.status(400).json({ error: "API Key not set. Please add your Google AI API key to the server.js file." });
   }
 
@@ -96,5 +96,5 @@ The goal is to provide data that feels like it was discovered *today*. Do not us
 });
 
 app.listen(PORT, () => {
-  console.log(`Trend scraper server running on http://localhost:${PORT}`);
+  console.log(`Trend scraper server running on https://trend-scraper-backend.onrender.com`);
 });
